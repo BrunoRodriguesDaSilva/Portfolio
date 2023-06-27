@@ -660,6 +660,12 @@ body {
   }
 }
 @media screen and (max-width: 425px) {
+  .cursor__area {
+    display: none;
+  }
+  .cursor__ponto {
+    display: none;
+  }
   #btnIniciar {
     display: block;
     margin: 44vh auto;
@@ -684,7 +690,7 @@ body {
     border: 2px solid #494949;
   }
   #pagina__inicial .name {
-    width: 150px;
+    width: auto;
     margin-left: 30px;
     font-size: 25px;
   }
