@@ -553,6 +553,8 @@ body {
     align-items: center;
   }
   #pagina__inicial .name {
+    height: 230px;
+    width: auto;
     margin: 150px 80px;
   }
   #pagina__inicial .ver__projetos {
@@ -659,7 +661,7 @@ body {
 }
 @media screen and (max-width: 425px) {
   #btnIniciar {
-    display: flex;
+    display: block;
     margin: 44vh auto;
     justify-content: center;
     align-items: center;
@@ -682,9 +684,9 @@ body {
     border: 2px solid #494949;
   }
   #pagina__inicial .name {
-    width: 200px;
+    width: 150px;
     margin-left: 30px;
-    font-size: 30px;
+    font-size: 25px;
   }
   #pagina__inicial .ver__projetos {
     height: 40px;
@@ -697,16 +699,18 @@ body {
     padding-bottom: 100px;
   }
   #sobre__mim .texto__sobre__mim {
+    height: auto;
     width: 90vw;
     margin-top: 150px;
   }
   #sobre__mim .texto__sobre__mim p {
     letter-spacing: 2px;
+    height: auto;
     padding: 10px;
     font-size: 10px;
   }
   #sobre__mim .tecnologias {
-    height: 56vh;
+    height: auto;
     width: 90vw;
     margin-top: 150px;
   }
@@ -730,8 +734,8 @@ body {
     display: flex;
   }
   #projetos .container .card__projetos {
+    height: 70vh;
     width: 90vw;
-    height: 600px;
     display: block;
     margin: 100px auto;
     padding: 0;
