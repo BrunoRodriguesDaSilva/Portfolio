@@ -568,7 +568,7 @@ body {
   }
   #sobre__mim .texto__sobre__mim {
     margin: 20% auto;
-    height: 90vh;
+    height: AUTO;
     width: 90vw;
   }
   #sobre__mim .texto__sobre__mim p {
