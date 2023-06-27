@@ -279,7 +279,7 @@ $fonteSizeTexto: 30px;
         background-color: rgba(0, 0, 0, 0.171);
     
         & h1{
-            padding: 50PX 0;
+            padding: 50px 0;
             letter-spacing: 5px;
             text-align: center;
             font-family: $fonteTitulos;
@@ -289,7 +289,7 @@ $fonteSizeTexto: 30px;
         & p {
             color: silver;
             letter-spacing: 2px;
-            padding: 10px 100px;
+            padding: auto;
             font-size: 14px;
             font-family: $fonteTexto;
         }

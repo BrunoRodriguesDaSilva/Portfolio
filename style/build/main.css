@@ -164,6 +164,15 @@ body {
   animation-delay: 0.3s;
 }
 
+#content {
+  opacity: 0;
+  display: none;
+}
+#content.fade {
+  opacity: 1;
+  display: block;
+}
+
 #cabecalho {
   top: 0;
   width: 99vw;
@@ -189,41 +198,26 @@ body {
   color: #fff;
 }
 
-#content {
-  opacity: 0;
-  display: none;
-}
-#content.fade {
-  opacity: 1;
-  display: block;
-}
-
 #pagina__inicial {
-  height: 80vh;
-  width: 70vw;
-  margin: 80px auto;
-  align-items: center;
-  justify-content: center;
+  height: 70vh;
+  width: 90vw;
+  padding-right: 90%;
+  margin: 10% auto;
   border: 2px solid #494949;
 }
-
-.name {
+#pagina__inicial .name {
   width: 500px;
-  padding: 20px;
-  margin: 200px 200px;
-  border-color: transparent;
-  background-color: transparent;
-  font-family: "Bebas Neue", sans-serif;
   letter-spacing: 7px;
+  margin: 150px 200px;
+  font-family: "Bebas Neue", sans-serif;
   color: #fff;
   font-size: 56px;
 }
-.name:hover {
+#pagina__inicial .name:hover {
   transition: all 0.3s ease-in-out;
   border-bottom: 3px solid goldenrod;
 }
-
-.ver__projetos {
+#pagina__inicial .ver__projetos {
   height: 50px;
   width: 200px;
   margin: 0 200px;
@@ -232,7 +226,7 @@ body {
   font-size: 26px;
   background-color: rgba(43, 42, 42, 0.3215686275);
 }
-.ver__projetos a {
+#pagina__inicial .ver__projetos a {
   text-decoration: none;
   color: goldenrod;
 }
@@ -243,9 +237,8 @@ body {
   display: flex;
   background-image: linear-gradient(rgba(8, 8, 8, 0.8156862745), rgba(7, 15, 27, 0.2588235294));
 }
-
-.texto__sobre__mim {
-  height: 75vh;
+#sobre__mim .texto__sobre__mim {
+  height: 88vh;
   width: 40vw;
   margin: auto;
   border-radius: 10px;
@@ -254,50 +247,51 @@ body {
   box-shadow: cadetblue 2px 1px 20px 2px;
   background-color: rgba(0, 0, 0, 0.171);
 }
-.texto__sobre__mim h1 {
-  padding: 50PX 0;
-  letter-spacing: 5px;
-  text-align: center;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 46px;
-}
-.texto__sobre__mim p {
-  color: silver;
-  letter-spacing: 2px;
-  padding: 10px 100px;
-  font-family: "Oswald", sans-serif;
-}
-
-.tecnologias {
-  height: 75vh;
-  width: 40vw;
-  margin: auto;
-  border-radius: 10px;
-  color: #fff;
-  border: 1px solid goldenrod;
-  box-shadow: cadetblue 2px 1px 20px 2px;
-  background-color: rgba(0, 0, 0, 0.171);
-}
-.tecnologias h1 {
+#sobre__mim .texto__sobre__mim h1 {
   padding: 50px 0;
   letter-spacing: 5px;
   text-align: center;
   font-family: "Bebas Neue", sans-serif;
   font-size: 46px;
 }
-.tecnologias p {
+#sobre__mim .texto__sobre__mim p {
+  color: silver;
+  letter-spacing: 2px;
+  padding: auto;
+  font-size: 14px;
+  font-family: "Oswald", sans-serif;
+}
+#sobre__mim .tecnologias {
+  height: 88vh;
+  width: 40vw;
+  margin: auto;
+  border-radius: 10px;
+  color: #fff;
+  border: 1px solid goldenrod;
+  box-shadow: cadetblue 2px 1px 20px 2px;
+  background-color: rgba(0, 0, 0, 0.171);
+}
+#sobre__mim .tecnologias h1 {
+  padding: 50px 0;
+  letter-spacing: 5px;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 46px;
+}
+#sobre__mim .tecnologias p {
   color: silver;
   letter-spacing: 2px;
   padding: 10px 100px;
+  font-size: 14px;
   font-family: "Oswald", sans-serif;
 }
-.tecnologias ul {
+#sobre__mim .tecnologias ul {
   display: flex;
   list-style: none;
   margin-top: 24%;
   justify-content: space-evenly;
 }
-.tecnologias ul li img {
+#sobre__mim .tecnologias ul li img {
   height: 40px;
   width: 40px;
 }
@@ -410,7 +404,6 @@ body {
 }
 #contato .area__de__contato li a .informacoes__contato p {
   margin: 3px 0;
-  padding: 0 40px;
 }
 
 .formulario {
@@ -464,239 +457,357 @@ body {
   background: #79002c;
 }
 
-@media (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1367px) {
   #btnIniciar {
-    margin: 40% 38%;
+    display: flex;
+    margin: 54vh auto;
+    justify-content: center;
+    align-items: center;
   }
-  #pagina__inicial {
-    margin-bottom: 200px;
+  #pagina__inicial .name {
+    margin: 150px 80px;
   }
-  .name {
-    margin-left: 25px;
-  }
-  .ver__projetos {
-    margin-left: 60px;
+  #pagina__inicial .ver__projetos {
+    margin: 0 80px;
   }
   #sobre__mim {
+    height: 100%;
+    padding-bottom: 10px;
     display: block;
-    min-height: 1800px;
   }
-  .texto__sobre__mim {
-    height: 85vh;
-    width: 70vw;
-    margin-bottom: 200px;
+  #sobre__mim .texto__sobre__mim {
+    width: 85vw;
+    margin: 300px auto;
   }
-  .tecnologias {
-    height: 85vh;
-    width: 70vw;
-    margin-bottom: 200px;
-  }
-  #contato {
-    max-width: 100vw;
-  }
-  #contato .area__de__contato {
-    max-width: 30%;
-    margin: 0 10%;
-  }
-  #contato .area__de__contato li a .informacoes__contato p {
-    padding: 0 20px;
-  }
-}
-@media (max-width: 768px) {
-  .cursor__area, .cursor__ponto {
-    display: none;
-  }
-  #cabecalho {
-    height: auto;
-    position: sticky;
-  }
-  #btnIniciar {
-    margin: 50% 35%;
-  }
-  #loading__page {
-    margin: 0 25px;
-  }
-  .name {
-    font-size: 41px;
-    margin-left: 20px;
-  }
-  .ver__projetos {
-    margin-left: 40px;
-  }
-  .texto__sobre__mim {
-    height: 82vh;
-    font-size: 14px;
-  }
-  .texto__sobre__mim p {
-    padding: 0 60px;
-  }
-  .tecnologias {
-    font-size: 14px;
+  #sobre__mim .tecnologias {
+    width: 85vw;
+    margin: 300px auto;
   }
   #projetos {
     width: 99vw;
+    text-align: center;
+    background-color: rgba(7, 15, 27, 0.2588235294);
   }
-  #projetos .container .card__projetos {
-    width: 80vw;
-    padding: 10% 35px;
-  }
-  #projetos .container .card__projetos img {
-    width: 100px;
-    height: 450px;
-  }
-  #projetos .container .card__projetos .conteudo__projetos {
-    padding: 0;
-    width: 270px;
-  }
-  #projetos .container .card__projetos .conteudo__projetos h1 {
-    width: auto;
-    margin-left: 25px;
-  }
-  #projetos .container .card__projetos .conteudo__projetos p {
-    width: auto;
-    margin-left: 25px;
-    margin-bottom: 30px;
-  }
-  #projetos .container .card__projetos .conteudo__projetos img {
-    margin-left: -50px;
-  }
-  #contato {
-    display: block;
-    width: 100%;
-  }
-  #contato .area__de__contato {
-    max-width: 100%;
-    padding: 15% 0;
-    margin: 0 15%;
-  }
-  #contato .formulario {
-    width: 100%;
-    padding: 0 auto;
-  }
-  #contato .formulario form {
-    padding: 0 19%;
-  }
-}
-@media (max-width: 375px) {
-  #btnIniciar {
-    margin: 90% 20%;
-  }
-  #loading__page {
-    margin: 0 10px;
-  }
-  #pagina__inicial {
-    width: 90vw;
-  }
-  .name {
-    width: 80%;
-    margin: 0 0 50% 5%;
-    padding: 80% 0% 2% 5%;
-  }
-  .ver__projetos {
-    height: 42px;
-    width: 150px;
-  }
-  #sobre__mim {
-    min-height: 1450px;
-  }
-  .texto__sobre__mim {
-    height: 72vh;
-    width: 88vw;
-    font-size: 10px;
-    margin-bottom: 180px;
-  }
-  .texto__sobre__mim p {
-    padding: 0 30px;
-  }
-  .tecnologias {
-    height: 56vh;
-    width: 88vw;
-    margin-bottom: 0;
-    font-size: 10px;
-  }
-  .tecnologias p {
-    padding: 0 30px;
-  }
-  .tecnologias ul {
-    padding: 0;
-    width: 100%;
-  }
-  .tecnologias ul li img {
-    height: 30px;
-    width: auto;
+  #projetos h1 {
+    padding: 80px 0;
+    letter-spacing: 5px;
+    font-family: "Bebas Neue", sans-serif;
+    color: #fff;
+    font-size: 46px;
   }
   #projetos .container .card__projetos {
     width: 90vw;
-    display: block;
-    margin-bottom: 5%;
+    padding: 70px 40px;
   }
   #projetos .container .card__projetos a {
-    height: 300px;
-    width: 200px;
+    margin: 0 auto;
   }
   #projetos .container .card__projetos a .painel__projetos {
-    min-width: 260px;
-    height: 300px;
-    width: 200px;
+    min-width: 300px;
+  }
+  #projetos .container .card__projetos img {
+    width: 300px;
+    height: 450px;
+    border-radius: 30px;
   }
   #projetos .container .card__projetos .conteudo__projetos {
-    padding: 0;
-    width: 270px;
+    text-align: start;
+    padding: 10px 0;
+    width: 390px;
   }
   #projetos .container .card__projetos .conteudo__projetos h1 {
-    margin: 0;
-    padding: 20px 0 0 0;
-    font-size: 28px;
-    margin-left: 25px;
+    height: 300px;
+    width: 100px;
+    color: #fff;
+    font-family: "Bebas Neue", sans-serif;
+    margin: 0 40px;
   }
   #projetos .container .card__projetos .conteudo__projetos p {
-    height: auto;
-    margin: 0;
-    padding: 0;
-    font-size: 22px;
-    margin-left: 25px;
-    margin-bottom: 30px;
+    height: 150px;
+    width: 50px;
+    margin: 0 40px;
+    height: 110px;
+    width: 300px;
+    font-size: 25px;
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+    position: relative;
   }
-  #projetos .container .card__projetos .conteudo__projetos img {
+  #projetos .container .card__projetos .conteudo__projetos .icones__projetos {
+    display: flex;
+    margin-right: 50px;
+    height: 50px;
+    width: 300px;
+    justify-content: space-evenly;
+  }
+  #projetos .container .card__projetos .conteudo__projetos .icones__projetos img {
+    height: 40px;
+    width: 40px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 767px) {
+  #btnIniciar {
+    display: flex;
+    margin: 54vh auto;
+    justify-content: center;
+    align-items: center;
+  }
+  #pagina__inicial .name {
+    margin: 150px 80px;
+  }
+  #pagina__inicial .ver__projetos {
+    margin: 0 80px;
+  }
+  #sobre__mim {
+    height: 100%;
+    display: block;
+    margin-top: 300px;
+    padding-bottom: 10px;
+  }
+  #sobre__mim .texto__sobre__mim {
+    margin: 20% auto;
+    height: 90vh;
+    width: 90vw;
+  }
+  #sobre__mim .texto__sobre__mim p {
+    letter-spacing: 2px;
+    padding: 10px 100px;
+  }
+  #sobre__mim .tecnologias {
+    margin: 20% auto;
+    height: 80vh;
+    width: 90vw;
+  }
+  #sobre__mim .tecnologias p {
+    letter-spacing: 2px;
+    padding: 10px 100px;
+  }
+  #sobre__mim .tecnologias ul {
+    display: flex;
+    list-style: none;
+    margin-top: 24%;
+    justify-content: space-evenly;
+  }
+  #sobre__mim .tecnologias ul li img {
+    height: 40px;
+    width: 40px;
+  }
+  #projetos .container .card__projetos {
+    width: 90vw;
+    padding: 20px 40px;
+    display: block;
+  }
+  #projetos .container .card__projetos a {
+    margin: 0 auto;
+  }
+  #projetos .container .card__projetos a .painel__projetos {
+    min-width: 100px;
+  }
+  #projetos .container .card__projetos img {
+    height: 300px;
+    width: 260px;
+    border-radius: 30px;
+  }
+  #projetos .container .card__projetos .conteudo__projetos {
+    text-align: start;
+    padding: 10px 0;
+    height: 250px;
+    width: 320px;
+  }
+  #projetos .container .card__projetos .conteudo__projetos h1 {
+    height: 100px;
+    width: 300px;
+    color: #fff;
+    font-family: "Bebas Neue", sans-serif;
+    margin: 0 40px;
+    padding: 0;
+    font-size: 40px;
+  }
+  #projetos .container .card__projetos .conteudo__projetos p {
+    font-size: 20px;
+    height: 50px;
+    width: 300px;
+    margin: 16px 40px;
+    font-size: 25px;
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+    position: relative;
+  }
+  #projetos .container .card__projetos .conteudo__projetos .icones__projetos {
+    display: flex;
+    margin-top: 50px;
+    margin-right: 50px;
+    height: 50px;
+    width: 300px;
+    justify-content: space-evenly;
+  }
+  #projetos .container .card__projetos .conteudo__projetos .icones__projetos img {
+    height: 40px;
+    width: 40px;
+  }
+  #contato {
+    display: block;
+    width: 99vw;
+  }
+  #contato img {
+    margin: 0 20px 0 0;
+  }
+  #contato .formulario {
+    display: block;
+    padding: 80px 60px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  #btnIniciar {
+    display: flex;
+    margin: 44vh auto;
+    justify-content: center;
+    align-items: center;
+  }
+  #content {
+    opacity: 0;
+    display: none;
+  }
+  #content.fade {
+    opacity: 1;
+    display: block;
+  }
+  #cabecalho {
+    position: sticky;
+  }
+  #pagina__inicial {
+    height: 70vh;
+    width: 90vw;
+    margin: 10% auto;
+    border: 2px solid #494949;
+  }
+  #pagina__inicial .name {
+    width: 200px;
+    margin-left: 30px;
+    font-size: 30px;
+  }
+  #pagina__inicial .ver__projetos {
+    height: 40px;
+    width: 150px;
+    margin: 20px 45px;
+  }
+  #sobre__mim {
+    height: 100%;
+    display: block;
+    padding-bottom: 100px;
+  }
+  #sobre__mim .texto__sobre__mim {
+    width: 90vw;
+    margin-top: 150px;
+  }
+  #sobre__mim .texto__sobre__mim p {
+    letter-spacing: 2px;
+    padding: 10px;
+    font-size: 10px;
+  }
+  #sobre__mim .tecnologias {
+    height: 56vh;
+    width: 90vw;
+    margin-top: 150px;
+  }
+  #sobre__mim .tecnologias p {
+    letter-spacing: 2px;
+    padding: 10px;
+    font-size: 10px;
+  }
+  #sobre__mim .tecnologias ul {
+    padding: 0;
+    justify-content: space-evenly;
+  }
+  #sobre__mim .tecnologias ul li img {
+    height: 20px;
+    width: 20px;
+  }
+  #projetos {
+    padding-bottom: 100px;
+  }
+  #projetos .container {
+    display: flex;
+  }
+  #projetos .container .card__projetos {
+    width: 90vw;
+    height: 600px;
+    display: block;
+    margin: 100px auto;
+    padding: 0;
+  }
+  #projetos .container .card__projetos a {
+    height: 100px;
+    width: 30px;
+  }
+  #projetos .container .card__projetos a .painel__projetos {
+    height: 300px;
+    width: 250px;
+    min-width: 250px;
+    margin-top: 6%;
+  }
+  #projetos .container .card__projetos .conteudo__projetos {
+    text-align: start;
+    padding: 10px 25px;
+    width: 250px;
+  }
+  #projetos .container .card__projetos .conteudo__projetos h1 {
+    height: 100px;
+    width: 250px;
+    margin: 10% 0;
+    padding: 0;
+    font-size: 40px;
+  }
+  #projetos .container .card__projetos .conteudo__projetos p {
+    height: 80px;
+    width: 250px;
     margin: 0;
     padding: 0;
-    margin-left: -50px;
+    font-size: 20px;
+  }
+  #projetos .container .card__projetos .conteudo__projetos .icones__projetos {
+    margin: 0;
+    height: 50px;
+    width: 250px;
+    align-items: start;
+  }
+  #projetos .container .card__projetos .conteudo__projetos .icones__projetos img {
+    height: 40px;
+    width: 40px;
+    align-items: start;
   }
   #contato {
     display: block;
   }
   #contato .area__de__contato {
-    max-width: 90%;
-    padding-top: 35%;
-    margin: 0 10%;
+    margin: 0 15%;
+    padding-top: 120px;
+  }
+  #contato .area__de__contato p {
+    width: 200px;
+    margin: 0;
+    padding-left: 15px;
+  }
+  #contato .area__de__contato img {
+    height: 35px;
+    width: 35px;
   }
   #contato .formulario {
-    width: 376px;
-    display: flex;
-    padding: 10% 0;
+    display: block;
+    padding: 80px 0;
   }
   #contato .formulario form {
-    width: 376px;
-    padding: 0;
-    padding-left: 10%;
-  }
-  #contato .formulario form h2 {
-    margin: 15% 0;
-    padding-right: 10%;
+    padding: 20px 30px;
   }
   #contato .formulario form p {
-    color: #fff;
-    margin-top: 10%;
-    font-family: "Raleway", sans-serif;
+    margin: 50px 0 0 0;
+    width: 250px;
   }
   #contato .formulario form input {
-    width: 300px;
+    width: 250px;
   }
   #contato .formulario form textarea {
-    width: 300px;
-  }
-  #contato .formulario form button {
-    margin-left: 15%;
+    width: 250px;
   }
 }
 
