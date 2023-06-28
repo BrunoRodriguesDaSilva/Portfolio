@@ -647,6 +647,15 @@ $fonteSizeTexto: 30px;
 }
 //Telas de tablet
 @media screen and (min-width: 426px) and (max-width: 767px) {
+
+    .cursor__area {
+        display: none;
+    }
+    
+    .cursor__ponto {
+        display: none;
+    }
+
     #btnIniciar {
         display: flex;
         margin: 54vh auto;
@@ -675,7 +684,7 @@ $fonteSizeTexto: 30px;
         
         .texto__sobre__mim{
             margin: 20% auto;
-            height: AUTO;
+            height: auto;
             width: 90vw;
         
             & p {
@@ -718,6 +727,7 @@ $fonteSizeTexto: 30px;
         & .container {
             
             & .card__projetos{
+                height: 80vh;
                 width: 90vw;
                 padding: 20px 40px;
                 display: block;
@@ -900,7 +910,7 @@ $fonteSizeTexto: 30px;
             display: flex;
             
             & .card__projetos{
-                height: 70vh;
+                height: 80vh;
                 width: 90vw;
                 display: block;
                 margin: 100px auto;
