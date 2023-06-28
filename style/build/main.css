@@ -175,9 +175,9 @@ body {
 
 #cabecalho {
   top: 0;
-  width: 99vw;
   height: 6vh;
   position: fixed;
+  width: 100%;
   color: #fff;
   backdrop-filter: blur(20px);
   background-color: transparent;
@@ -199,7 +199,6 @@ body {
 }
 
 #pagina__inicial {
-  height: 70vh;
   width: 90vw;
   padding-right: 90%;
   margin: 10% auto;
@@ -220,7 +219,7 @@ body {
 #pagina__inicial .ver__projetos {
   height: 50px;
   width: 200px;
-  margin: 0 200px;
+  margin: 0 0 100px 200px;
   border-radius: 50px;
   font-family: "Oswald", sans-serif;
   font-size: 26px;
@@ -257,7 +256,7 @@ body {
 #sobre__mim .texto__sobre__mim p {
   color: silver;
   letter-spacing: 2px;
-  padding: 10px 100px;
+  padding: 0 100px;
   font-size: 14px;
   font-family: "Oswald", sans-serif;
 }
@@ -288,7 +287,7 @@ body {
 #sobre__mim .tecnologias ul {
   display: flex;
   list-style: none;
-  margin-top: 24%;
+  margin-top: 14%;
   justify-content: space-evenly;
 }
 #sobre__mim .tecnologias ul li img {
@@ -374,7 +373,7 @@ body {
   width: 55px;
 }
 #contato .area__de__contato {
-  margin: 0 15%;
+  margin: 0 12%;
   padding-top: 120px;
 }
 #contato .area__de__contato h4 {
@@ -457,18 +456,21 @@ body {
   background: #79002c;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1367px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   #btnIniciar {
     display: flex;
     margin: 54vh auto;
     justify-content: center;
     align-items: center;
   }
+  #cabecalho {
+    max-width: 1000px;
+  }
   #pagina__inicial .name {
     margin: 150px 80px;
   }
   #pagina__inicial .ver__projetos {
-    margin: 0 80px;
+    margin: 0 0 100px 200px;
   }
   #sobre__mim {
     height: 100%;
@@ -496,7 +498,7 @@ body {
     font-size: 46px;
   }
   #projetos .container .card__projetos {
-    width: 90vw;
+    width: 80vw;
     padding: 70px 40px;
   }
   #projetos .container .card__projetos a {
@@ -513,7 +515,7 @@ body {
   #projetos .container .card__projetos .conteudo__projetos {
     text-align: start;
     padding: 10px 0;
-    width: 390px;
+    width: 290px;
   }
   #projetos .container .card__projetos .conteudo__projetos h1 {
     height: 300px;
@@ -524,10 +526,8 @@ body {
   }
   #projetos .container .card__projetos .conteudo__projetos p {
     height: 150px;
-    width: 50px;
+    width: 240px;
     margin: 0 40px;
-    height: 110px;
-    width: 300px;
     font-size: 25px;
     font-family: "Oswald", sans-serif;
     color: #fff;
@@ -544,8 +544,25 @@ body {
     height: 40px;
     width: 40px;
   }
+  #contato {
+    width: 100%;
+  }
+  #contato .area__de__contato {
+    width: 40%;
+    margin: 0 3% 0 10%;
+  }
+  #contato .formulario {
+    width: 40%;
+    padding: 80px 0;
+  }
 }
 @media screen and (min-width: 426px) and (max-width: 767px) {
+  .cursor__area {
+    display: none;
+  }
+  .cursor__ponto {
+    display: none;
+  }
   #btnIniciar {
     display: flex;
     margin: 54vh auto;
@@ -558,7 +575,7 @@ body {
     margin: 150px 80px;
   }
   #pagina__inicial .ver__projetos {
-    margin: 0 80px;
+    margin: 0 0 70px 70px;
   }
   #sobre__mim {
     height: 100%;
@@ -568,7 +585,7 @@ body {
   }
   #sobre__mim .texto__sobre__mim {
     margin: 20% auto;
-    height: AUTO;
+    height: auto;
     width: 90vw;
   }
   #sobre__mim .texto__sobre__mim p {
@@ -595,7 +612,8 @@ body {
     width: 40px;
   }
   #projetos .container .card__projetos {
-    width: 90vw;
+    height: 80vh;
+    width: 70vw;
     padding: 20px 40px;
     display: block;
   }
@@ -629,7 +647,7 @@ body {
     font-size: 20px;
     height: 50px;
     width: 300px;
-    margin: 16px 40px;
+    margin: 16px auto;
     font-size: 25px;
     font-family: "Oswald", sans-serif;
     color: #fff;
@@ -655,8 +673,15 @@ body {
     margin: 0 20px 0 0;
   }
   #contato .formulario {
-    display: block;
-    padding: 80px 60px;
+    padding: 15% 0;
+  }
+  #contato .formulario form {
+    width: 400px;
+    padding: 0 20%;
+  }
+  #contato .formulario form h2 {
+    width: 300px;
+    margin: 100px 0;
   }
 }
 @media screen and (max-width: 425px) {
@@ -701,6 +726,7 @@ body {
   }
   #sobre__mim {
     height: 100%;
+    max-width: 410px;
     display: block;
     padding-bottom: 100px;
   }
@@ -737,10 +763,11 @@ body {
     padding-bottom: 100px;
   }
   #projetos .container {
+    width: 97vw;
     display: flex;
   }
   #projetos .container .card__projetos {
-    height: 70vh;
+    height: 80vh;
     width: 90vw;
     display: block;
     margin: 100px auto;
@@ -788,6 +815,7 @@ body {
   }
   #contato {
     display: block;
+    width: auto;
   }
   #contato .area__de__contato {
     margin: 0 15%;
@@ -805,9 +833,10 @@ body {
   #contato .formulario {
     display: block;
     padding: 80px 0;
+    width: 97vw;
   }
   #contato .formulario form {
-    padding: 20px 30px;
+    padding: 20px 80px;
   }
   #contato .formulario form p {
     margin: 50px 0 0 0;
